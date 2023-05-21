@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Telefonica</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./src/img/lista-telefonica.png" alt="lista telefonica">
+            <h1>Lista Telefonica</h1>
+        </header>
+        <form id="formulario-telefonico">
+            <input id="name-contato" type="text" placeholder="Nome do Contato">
+            <input id="CodArea" type="tel" placeholder="DDD">
+            <input id="tel-contato" type="tel" placeholder="Cel / Telefone">
+
+                <select name="" id="typeContato">
+                    <option value="a">Residencial</option>
+                    <option value="b">Celular</option>
+                    <option value="c">Comercial</option>
+                </select>
+                <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <th>Tipo</th>
+                <th>Nome de Contato</th>
+                <th class="tbCodArea">Cod Area</th>
+                <th>Telefone</th>
+            </thead>
+            <tbody class="conteudo-tabela" id="insertTbody">
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="./src/js/mais.js"></script>
+</html>
